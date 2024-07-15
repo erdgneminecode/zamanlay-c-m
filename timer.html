@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>My Webpage</title>
+        <script src="script.js"></script>
+        <rel type="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <div style="margin: auto; text-align: center; color:red;">
+    
+        <div id="div_sonuc">0</div>
+        <button onclick="setTimeout(say, '1000');">
+        Start
+</button>
+
+<script>
+
+var sayac = 0;
+
+    function say() {
+        sayac++;
+        document.getElementById("div_sonuc").innerHTML = sayac;
+        setTimeout(say, '1000');
+       
+    }
+</script>
+
+    </body>
+</html>
